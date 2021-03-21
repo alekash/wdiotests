@@ -21,6 +21,11 @@ class LoginPage extends Page {
     open () {
         return super.open('/');
     }
+
+    submitButtonIsDisabled(){
+        expect(this.buttonSubmit).toBeDisabled();
+
+    }
 }
 
 export default new LoginPage();
