@@ -1,4 +1,5 @@
-import LoginPage from  'page';
+import Page from './page';
+
 
 class LoginPage extends Page {
     get inputUsername () { return $('#normal_login_email'); }
@@ -10,7 +11,7 @@ class LoginPage extends Page {
     }
 
     setPassword(password){
-        this.inputPassword(password);
+        this.inputPassword.setValue(password);
     }
 
     clickSubmitButton() {
