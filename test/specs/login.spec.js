@@ -11,7 +11,7 @@ describe('Auth', () => {
 
     it('user logs in with valid data', () => {
          LoginPage.setLogin('pimob39177@naymeo.com');
-         LoginPage.setPassword('Murzilka12121');
+         LoginPage.setPassword('Murzilka21');
          LoginPage.clickSubmitButton();
          ProfilePage.isOpen();
     });
