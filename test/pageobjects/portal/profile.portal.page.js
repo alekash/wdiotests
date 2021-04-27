@@ -1,7 +1,6 @@
 import PortalPage from "./portal.page";
 
-
-class ProfilePortalPage extends PortalPage {
+class ProfilePage extends PortalPage {
     get iconUser () { return $('.ant-avatar-square'); }
    isOpen(){
        expect(browser).toHaveUrlContaining('/profile/');
@@ -10,4 +9,4 @@ class ProfilePortalPage extends PortalPage {
 
 }
 
-export default new ProfilePortalPage();
+export default new ProfilePage();

@@ -1,7 +1,6 @@
-export default class Page {
-    open (path) {
-        return browser.url(path)
-    }
+class Page {
+
+    get notification () { return $('.ant-notification-notice-message') }
 
     clearInput(element){
         const value = element.getValue();
@@ -10,3 +9,5 @@ export default class Page {
         }
     }
 }
+
+export default Page;

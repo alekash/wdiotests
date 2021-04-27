@@ -1,7 +1,7 @@
 import PortalPage from "./portal.page";
 
 class CoursesPage extends PortalPage {
-    sectionHeader(){ return $('section > div > h1');}
+    get sectionHeader(){ return $('section > div > h1');}
     open() {
         return super.open('/course');
     }
