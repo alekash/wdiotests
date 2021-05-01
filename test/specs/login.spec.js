@@ -10,8 +10,8 @@ describe('Auth', () => {
     });
 
     it('user logs in with valid data', () => {
-         LoginPage.setLogin('pimob39177@naymeo.com');
-         LoginPage.setPassword('Murzilka21');
+         LoginPage.setLogin(process.env.LOGIN);
+         LoginPage.setPassword(process.env.PASSWORD);
          LoginPage.clickSubmitButton();
          ProfilePage.isOpen();
     });
