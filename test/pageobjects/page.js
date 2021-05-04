@@ -1,13 +1,14 @@
-class Page {
+export default class Page {
+    open(path){
+        return browser.url(path)
+    }
 
-    get notification () { return $('.ant-notification-notice-message') }
-
-    clearInput(element){
-        const value = element.getValue();
-        for(let i = 0; i < value.length; i++){
-            element.keys(['Backspace']);
+    async clearInput(element){
+        const value = await element.getValue();
+        for (let i = 0; i < value.length; i++){
+            await element.keys(['Backspace']);
         }
     }
 }
 
-export default Page;
+
